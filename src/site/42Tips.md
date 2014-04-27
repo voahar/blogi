@@ -75,9 +75,16 @@ On entend par symboles, les méthodes, les attributs de classes, etc ...
 
 On peut y rechercher des méthodes, des variables de classes ou d'instances.
 
-### Structural Search
+### Structural Search & Replace
 
 Cette fonctionnalité est très intéressante parce qu'elle permet de détecter et remplacer toutes les structures de code qui correspondent au patern que vous avez saisis.
+
+Elle permet de faire deux choses :
+- Soit rechercher un bloc de code donné.
+- Soit remplacer une expression par un bloc de code donné.
+
+Par exemple, si on a un appel de méthode qui renvoie une exception, on peut ajouter un bloc _try/catch_ via cette fonctionnalité.
+On peut aussi faire l'inverse, si on a des _try/catch_ qui sont silencieux, on peut aussi les détecter.
 
 L'exemple qui a été donné était de trouver tous les blocs de code qui récupèrent une exception sans la traiter.
 
@@ -94,6 +101,12 @@ try {
 
 
 Pour cela, on ajoute un pattern via le menu.
+
+1. Afficher le menu des paramétrage
+2. Chercher "Structural Search Inspection", l'activer si elle ne l'est pas déjà.
+
+
+
 
 On met juste ce qui peut changer, c'est-à-dire le statement qu'il y a entre le try et le catch.
 
