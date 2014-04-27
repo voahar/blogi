@@ -50,7 +50,7 @@ Voici les actions disponibles lorsque l'on se trouve dans une classe:
 
 ## Pour rechercher plus vite
 
-### Les classes
+### Une classe
 
 * <strong><kbd>CTRL</kbd> + <kbd>N</kbd> </strong>: affiche une popup pour pouvoir rechercher une classe.
 
@@ -63,11 +63,11 @@ Voici les quelques extensions que cette fonctionnalités offre :
     1. Par exemple : _MSC:40_ affiche la classe MaSuperberbeClasse et positionne le curseur à la ligne _40_.
 1. On peut aussi rechercher des répertoires dans le projet en commençant la recherche par un '/'.
 
-### Les fichiers
+### Des fichiers
 
 * <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>N</kbd></strong> : affiche la fenêtre de recherche de fichiers.
 
-### Symboles
+### Des symboles
 
 On entend par symboles, les méthodes, les attributs de classes, etc ...
 
@@ -136,6 +136,10 @@ Vous allez me dire, on connaissait déjà. Moi je dis tant mieux mais après un 
 Ce fut une séance riches en raccourcis qui amélioreront nettement ma productivité et certainement la vôtre avec Intellij Idea.
 
 J'espère que ces quelques astuces vous aidera dans votre utilisation quotidienne de cet excellent IDE qu'est Intellij IDEA.
+
+## Liste de tous les raccourcis
+
+
 
 ## Conclusion
 
