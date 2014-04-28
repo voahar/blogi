@@ -113,7 +113,7 @@ public class HelloController {
 }
 ~~~~
 
-1. Entrer la commande <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd></strong>
+1. Entrer la commande <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd></strong>.
 2. Copier et coller le code suivant dans le champ "Search template" :
 
 ~~~~java
@@ -130,22 +130,14 @@ try {
 
 L'exemple qui a été donné était de trouver tous les blocs de code qui récupèrent une exception sans la traiter.
 
-Voici le type de code recherché, qui avouons-le est une mauvaise façn d'écrire du code :
+### Recherche et remplacer les try/catch qui ne font rien de l'exception attrappée
+
+De la même manière que la recherche, on peut remplacer des blocs de codes par un autre.
+Cela est possible avec la fonctionnalité "Structural Replace" accessible via <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>M</kbd></strong>.
+
+On réalisant cette combinaison de touches, on obtient ceci :
 
 
-~~~~java
-try {
-    get(toPrint);
-} catch (Exception e) {
-
-}
-~~~~
-
-
-Pour cela, on ajoute un pattern via le menu.
-
-1. Afficher le menu des paramétrage
-2. Chercher "Structural Search Inspection", l'activer si elle ne l'est pas déjà.
 
 
 
@@ -153,13 +145,19 @@ Pour cela, on ajoute un pattern via le menu.
 
 ### Les inspections
 
-<strong><kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>I</kbd></strong> : Inspecter une classe ou une méthode.
+La combinaison <strong><kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>I</kbd></strong> permet d'inspecter une classe ou une méthode.
 
-Cela permet de savoir ce qui ne va pas dans une classe ou méthode.
+Cela permet de savoir ce qui ne va pas dans une classe ou méthode. C'est un complément à PMD et Checkstyle.
 
 ### Le guide de productivité
 
-· Productivity guide : pour le fun on voit les touches, que l’on utilise le plus. On pourrait s’en servir pour créer des live templates adéquats. C’est de l’amélioration continue.
+Le Productivity guide donne des statistiques sur notre utilisation de l'IDE et comment grâce à l'assistance de l'IDE, on devient plus productif. On y voit par exemple le nombre de fois que l'on utilise une fonctionnalité.
+On y accède en faisant <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>A</kbd></strong>.
+Puis on y saisi : Productivity Guide.
+
+On obtient ceci :
+
+
 
 ### Le TDD
 
