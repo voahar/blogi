@@ -1,28 +1,28 @@
-<img class="alignleft" alt="IntellijIDEA 13" src="http://blog.jetbrains.com/idea/files/2013/12/splash13-1.png" width="213" height="118" />Hadi HARIRI (@hhariri) de chez Jetbrains a présenté durant cette conférence quelques astuces pratiques de leur IDE phare Intellij IDEA, un IDE polyglotte payant mais qui est aussi proposé en édition communautaire.
+<a href="http://blog.soat.fr/wp-content/uploads/2014/04/double_xx_texte.png"><img src="http://blog.soat.fr/wp-content/uploads/2014/04/double_xx_texte.png" alt="double_xx_texte" width="128" height="124" class="alignleft size-full wp-image-25646" /></a>
+
+Hadi HARIRI (@hhariri) de chez Jetbrains a présenté durant cette conférence quelques astuces pratiques de leur IDE phare Intellij IDEA, un IDE polyglotte payant mais qui est aussi proposé en édition communautaire.
 
 Il commence la séance avec une petite touche d’humour comme quoi ceux qui sont sur Eclipse migreront sur Intellij Idea à la fin de la séance. Après quelques questions pour savoir qui sont sur Intelij ou sur Eclipse, il commence par présenter des raccourcis basiques.
 
 Il en a présenté une centaine tout au long de la conférence. Cependant, je ne vais juste présenter que celles qui m'ont vraiment surpris et que je trouve vraiment utiles.
 
-Un PDF contenant tous les raccourcis sera disponible à la fin de cet article.
-
-Si vous êtes un early adopter de cet IDE ou si vous voulez vous y mettre,
-
-Voici les raccourcis et les astuces qui changeront peut-être votre utilisation quotidienne d'Intellij IDEA.
+Si vous êtes un early adopter de cet IDE ou si vous voulez vous y mettre, voici les raccourcis et les astuces qui changeront peut-être votre utilisation quotidienne d'Intellij IDEA.
 
 
 ## Des raccourcis pour naviguer plus facilement dans un projet
 
 Lors de mon utilisation de cet IDE, il m'arrive souvent d'utiliser la souris pour aller dans le panneau contenant la structure du projet.
-Eh bien maintenant, on peut utiliser le raccourci <strong><kbd>CTRL</kbd> + <kbd>1 </kbd></strong>.
+Eh bien maintenant, on peut utiliser le raccourci <strong><kbd>CTRL</kbd> + <kbd>1</kbd></strong> pour l'atteindre.
 
 Maintenant, si on veut configurer notre projet, il existe un raccourci <strong><kbd>ALT</kbd> + <kbd>F7</kbd></strong> pour afficher rapidement la fenêtre de paramétrage du projet.
 
 Pour maximiser l'espace de travail et pour naviguer plus facilement à travers les différents packages de votre projet, plusieurs options s'offrent à nous :
 
- - On peut tout d'abord désactiver la barre de navigation celle qui se trouve en haut de la fenêtre.
-     - Pour ce faire, il faut aller
-     - On pourra toujours l'afficher à la demande en saisissant :
+ - La barre de navigation :
+    - On peut tout d'abord désactiver la barre de navigation celle qui se trouve en haut de la fenêtre. Pour ce faire, il faut aller **View>Navigation Bar**.
+    - Ensuite, on pourra toujours l'afficher à la demande en saisissant : <strong><kbd>ALT</kbd> + <kbd>DEBUT</kbd></strong>.
+
+<a href="http://blog.soat.fr/wp-content/uploads/2014/04/nav_bar.png"><img src="http://blog.soat.fr/wp-content/uploads/2014/04/nav_bar.png" alt="nav_bar" width="540" height="28" class="aligncenter size-full wp-image-26124" /></a>
 
  - On peut aussi faire de la place dans l'éditeur en utilisant la fonctionnalité 'Blank Screen' avec la commande : <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F12</kbd></strong>.
 
@@ -86,7 +86,8 @@ Pour y accéder, il faut activer l'option.
 1. Tout d'abord, activer l'option en accédant aux paramètres de l'IDE.
 2. Ensuite rechercher "Structural Search Inspection", l'activer si elle ne l'est pas déjà
 
-On peut aussi faire l'inverse, si on a des _try/catch_ qui sont silencieux, on peut aussi les détecter.
+<a href="http://blog.soat.fr/wp-content/uploads/2014/04/structural_search_inspection.png"><img src="http://blog.soat.fr/wp-content/uploads/2014/04/structural_search_inspection-1024x756.png" alt="structural_search_inspection" width="640" height="472" class="aligncenter size-large wp-image-26105" /></a>
+
 
 #### Recherche des try/catch qui ne font rien de l'exception attrappée
 
@@ -124,22 +125,22 @@ try {
 }
 ~~~~
 
+<a href="http://blog.soat.fr/wp-content/uploads/2014/04/structural_search.png"><img src="http://blog.soat.fr/wp-content/uploads/2014/04/structural_search.png" alt="structural_search" width="652" height="529" class="aligncenter size-full wp-image-26109" /></a>
+
 3. En appuyant sur "Find", on obtient ceci :
 
-
+<a href="http://blog.soat.fr/wp-content/uploads/2014/04/structural_search_result.png"><img src="http://blog.soat.fr/wp-content/uploads/2014/04/structural_search_result-1024x619.png" alt="structural_search_result" width="640" height="386" class="aligncenter size-large wp-image-26111" /></a>
 
 L'exemple qui a été donné était de trouver tous les blocs de code qui récupèrent une exception sans la traiter.
 
-### Recherche et remplacer les try/catch qui ne font rien de l'exception attrappée
+#### Recherche et remplacer les try/catch qui ne font rien de l'exception attrappée
 
 De la même manière que la recherche, on peut remplacer des blocs de codes par un autre.
 Cela est possible avec la fonctionnalité "Structural Replace" accessible via <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>M</kbd></strong>.
 
 On réalisant cette combinaison de touches, on obtient ceci :
 
-
-
-
+<a href="http://blog.soat.fr/wp-content/uploads/2014/04/structural_replace.png"><img src="http://blog.soat.fr/wp-content/uploads/2014/04/structural_replace.png" alt="structural_replace" width="635" height="732" class="aligncenter size-full wp-image-26114" /></a>
 
 ## Des fonctionnalités avancées
 
@@ -151,13 +152,16 @@ Cela permet de savoir ce qui ne va pas dans une classe ou méthode. C'est un com
 
 ### Le guide de productivité
 
-Le Productivity guide donne des statistiques sur notre utilisation de l'IDE et comment grâce à l'assistance de l'IDE, on devient plus productif. On y voit par exemple le nombre de fois que l'on utilise une fonctionnalité.
+Le **Productivity guide** donne des statistiques sur notre utilisation de l'IDE et comment grâce à l'assistance de l'IDE, on devient plus productif. 
+
+On y voit par exemple le nombre de fois que l'on utilise une fonctionnalité.
+
 On y accède en faisant <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>A</kbd></strong>.
 Puis on y saisi : Productivity Guide.
 
 On obtient ceci :
 
-
+<a href="http://blog.soat.fr/wp-content/uploads/2014/04/productivity_guide.png"><img src="http://blog.soat.fr/wp-content/uploads/2014/04/productivity_guide.png" alt="productivity_guide" width="731" height="560" class="aligncenter size-full wp-image-26116" /></a>
 
 ### Le TDD
 
@@ -170,22 +174,10 @@ Pour finir, il a montré une manière de faire du TDD:
 
 Pour information, pour trouver une action, saisissez <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>A</kbd></strong>.
 
-
-Hadi a dit que c’est mieux de connaître des raccourcis car on est plus productifs que d’utiliser la souris.
-
-Il finit sur une pointe d’humour.
-
-Vous allez me dire, on connaissait déjà. Moi je dis tant mieux mais après un an et demie d’utilisation intensive de l’IDE, il continue de me surprendre.
-
-Ce fut une séance riches en raccourcis qui amélioreront nettement ma productivité et certainement la vôtre avec Intellij Idea.
-
-J'espère que ces quelques astuces vous aidera dans votre utilisation quotidienne de cet excellent IDE qu'est Intellij IDEA.
-
-## Liste de tous les raccourcis
-
-
-
 ## Conclusion
 
-Adepte d'Intellij IDEA depuis un an et demi, il me reste encore beaucoup à apprendre sur ce fabuleux IDE. Accompagnée par des petits apartés d'humour, la conférence de Hadi Hariri ne m'a pas à un seul moment ennuyé.
-Vive Intellij. En espérant que ces astuces et raccourcis augmenteront votre productivité.
+Adepte d'Intellij IDEA depuis un an et demi, il me reste encore beaucoup à apprendre sur ce fabuleux IDE. Accompagnée par de petits moments d'humour, la conférence de Hadi Hariri a été très riche en découvertes.
+
+J'espère que ces quelques astuces vous aidera à augmenter votre productivité dans votre utilisation quotidienne de cet excellent IDE qu'est Intellij IDEA.
+
+Vive Intellij IDEA.
