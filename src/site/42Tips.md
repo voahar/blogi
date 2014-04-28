@@ -79,12 +79,54 @@ On peut y rechercher des méthodes, des variables de classes ou d'instances.
 
 Cette fonctionnalité est très intéressante parce qu'elle permet de détecter et remplacer toutes les structures de code qui correspondent au patern que vous avez saisis.
 
-Elle permet de faire deux choses :
-- Soit rechercher un bloc de code donné.
-- Soit remplacer une expression par un bloc de code donné.
+Elle permet de rechercher un bloc de code donné suivant un pattern. Des pattern par défaut sont déjà fournis.
 
-Par exemple, si on a un appel de méthode qui renvoie une exception, on peut ajouter un bloc _try/catch_ via cette fonctionnalité.
+Pour y accéder, il faut activer l'option.
+
+1. Tout d'abord, activer l'option en accédant aux paramètres de l'IDE.
+2. Ensuite rechercher "Structural Search Inspection", l'activer si elle ne l'est pas déjà
+
 On peut aussi faire l'inverse, si on a des _try/catch_ qui sont silencieux, on peut aussi les détecter.
+
+#### Recherche des try/catch qui ne font rien de l'exception attrappée
+
+J'ai une classe comme ceci :
+
+~~~~java
+public class HelloController {
+
+    public void print(final String toPrint) {
+
+        try {
+            get(toPrint);
+        } catch (Exception e) {
+
+        }
+
+    }
+
+
+    public void get(String s) throws Exception {
+        throw new NotImplementedException();
+    }
+
+}
+~~~~
+
+1. Entrer la commande <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd></strong>
+2. Copier et coller le code suivant dans le champ "Search template" :
+
+~~~~java
+try {
+  $TryStatement$;
+} catch($ExceptionType$ $ExceptionDcl$) {
+
+}
+~~~~
+
+3. En appuyant sur "Find", on obtient ceci :
+
+
 
 L'exemple qui a été donné était de trouver tous les blocs de code qui récupèrent une exception sans la traiter.
 
@@ -105,15 +147,6 @@ Pour cela, on ajoute un pattern via le menu.
 1. Afficher le menu des paramétrage
 2. Chercher "Structural Search Inspection", l'activer si elle ne l'est pas déjà.
 
-
-
-
-On met juste ce qui peut changer, c'est-à-dire le statement qu'il y a entre le try et le catch.
-
-o Add search template
-
-o Replace bad structure : try catch without handling exception
-o Replace bad structure : try catch without handling exception
 
 
 ## Des fonctionnalités avancées
